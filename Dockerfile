@@ -1,7 +1,7 @@
   
 # DockerFile for a firedrake + jupyter container
 
-FROM firedrakeproject/firedrake
+FROM firedrakeproject/firedrake:74f5090240c5
 
 # This DockerFile is looked after by
 MAINTAINER David Ham <david.ham@imperial.ac.uk>
