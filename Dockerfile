@@ -30,4 +30,6 @@ RUN bash -c '. /home/firedrake/firedrake/bin/activate && for file in thetis/*.ip
 ENV OMPI_MCA_btl=tcp,self
 ENV PATH=/home/firedrake/firedrake/bin:$PATH
 
+ADD . /home/firedrake/notebooks
+
 CMD /home/firedrake/firedrake/bin/jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
