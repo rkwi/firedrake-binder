@@ -1,9 +1,6 @@
-  
-# DockerFile for a firedrake + jupyter container
-FROM firedrakeproject/firedrake:latest
+# This dockerfile is based on the dockerfile written by David Ham.
 
-# This DockerFile is looked after by
-MAINTAINER David Ham <david.ham@imperial.ac.uk>
+FROM firedrakeproject/firedrake:latest
 
 # Install ffmpeg
 USER root
