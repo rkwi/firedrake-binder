@@ -6,7 +6,7 @@ FROM firedrakeproject/firedrake:latest
 USER root
 RUN apt-get update && apt-get install -y ffmpeg
 
-USER firedrake
+# USER firedrake
 
 WORKDIR /home/firedrake
 # Install an iPython kernel for firedrake
