@@ -1,6 +1,5 @@
   
 # DockerFile for a firedrake + jupyter container
-
 FROM firedrakeproject/firedrake:latest
 
 # This DockerFile is looked after by
@@ -31,5 +30,6 @@ ENV OMPI_MCA_btl=tcp,self
 ENV PATH=/home/firedrake/firedrake/bin:$PATH
 
 ADD notebooks /home/firedrake/notebooks
+RUN apt-get update && apt-get install -y ffmpeg
 
 CMD /home/firedrake/firedrake/bin/jupyter notebook --ip 0.0.0.0 --no-browser --allow-root
