@@ -6,6 +6,7 @@ FROM firedrakeproject/firedrake:latest
 MAINTAINER David Ham <david.ham@imperial.ac.uk>
 
 # Install ffmpeg
+USER root
 RUN apt-get update && apt-get install -y ffmpeg
 
 USER firedrake
